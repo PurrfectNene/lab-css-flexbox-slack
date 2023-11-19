@@ -18,11 +18,16 @@
 
 <body>
   <!-- NAVBAR -->
-  <nav>
-    <div>
-      <img src="./images/slack-logo.png" alt="Slack logo" />
 
-      <ul>
+  <nav class="navigation-bar">
+      <img id="slack-logo" src="./images/slack-logo.png" alt="Slack logo" />
+        <a class="nav-bar-item" href="#">Product</a>
+        <a class="nav-bar-item" href="#">Solutions</a>
+        <a class="nav-bar-item" href="#">Resources</a>
+        <a class="nav-bar-item" href="#">Pricing</a>
+      
+
+      <!-- <ul>
         <li>
           <a href="#">Product</a>
         </li>
@@ -35,15 +40,14 @@
         <li>
           <a href="#">Pricing</a>
         </li>
-      </ul>
-    </div>
+      </ul> -->
 
-    <div>
-      <button>
+
+      <button class="nav-button">
         <img src="./images/icon-search.png" alt="Search icon">
       </button>
 
-      <button>
+      <button class="nav-button">
         <img src="./images/icon-menu.png" alt="Menu icon">
       </button>
 
@@ -61,18 +65,17 @@
 
   <!-- HEADER -->
   <header>
-    <div>
+    <div class="main-container">
       <h1>Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <p><b id="bold-text">Slack is free to try</b> for as long as you'd like.</p>
 
       <div>
-        <button>Sign up with email</button>
+        <button id="email-button" class="button">Sign up with email</button>
 
-        <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
-          <span>Sign up with Google</span>
-        </button>
+        <button id="google-button" class="button">
+          <span id="google-text">Sign up with Google</span></button>
+          <img id="google-logo" src="./images/logo-google.png" alt="Google logo" />
       </div>
 
     </div>
