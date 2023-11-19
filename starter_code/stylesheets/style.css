@@ -13,10 +13,9 @@ html {
     font-family:Arial, Helvetica, sans-serif;
 }
 
-.navigation-bar {
+#navigation-bar {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     background-color: #540B51;
@@ -28,7 +27,7 @@ html {
     width: auto;
 }
 
-.nav-bar-item {
+#navigation-list {
     color: white;
     text-decoration: none;
     display: none;
@@ -40,7 +39,7 @@ html {
     border: none;
 }
 
-.main-container {
+#main-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,12 +62,12 @@ p {
 }
 
 .button {
-    position: relative;
     width: 90%;
     height: 40px;
     border-radius: 4px;
     border: none;
     text-transform: uppercase;
+    font-size: 12px;
 }
 
 #email-button {
@@ -77,12 +76,39 @@ p {
 }
 
 #google-button {
+    position: relative;
     background-color: #4285F4;
     color: white;
 }
 
 #google-logo {
-    position: absolute;
     background-color: white;
     border-radius: 4px;
+    transform: translate(-50%, -50%);
+    max-height: 20px;
+    padding: 10px;
+}
+
+#image-container {
+    display: flex;
+    justify-content: flex-start;
+    height: 250px;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #F3EAE2;
+    height: 200px;
+}
+
+#logo-header {
+    color: #191817;
+    text-transform: uppercase;
+}
+
+.logo {
+    height: 30px;
+    width: auto;
 }
