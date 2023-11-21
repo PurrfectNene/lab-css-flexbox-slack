@@ -199,19 +199,38 @@ font-size: 40px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   padding: 0px 40px;
   text-align: center;
   background-color: #540B51;
   color: white;
 }
 
-.welcome button {
-  margin: 10px 0px;
-}
-
 .welcome h3{
   font-size: 32px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.welcome button{
+  width: 40%;
+  height:  40px;
+  text-transform: uppercase;
+}
+
+#try-for-free{
+  color: #540b51;
+  margin-bottom: 8px;
+  border-radius: 4%;
+  border: none;
+}
+
+#talk-to-sales{
+  background-color: #540b51;
+  color: white;
+  margin-bottom: 30px;
+  border-color: white;
+  border-radius: 4%;
+  border-width: 1px;
 }
 
 .footer{
@@ -230,7 +249,6 @@ font-size: 40px;
 .footer li {
   list-style-type: none;
   margin: 20px 0px 0px 0px;
-  
 }
 
 
@@ -245,6 +263,7 @@ font-size: 40px;
   justify-content: space-between;
   padding: 0px;
   margin-top: 0px;
+  
 }
 
 #footer-small {
@@ -254,6 +273,27 @@ font-size: 40px;
   text-align: center;
   flex-wrap: wrap;
 }
+
+#change-region,
+#download-slack{
+  position: absolute;
+  margin-left: 25px;
+}
+
+#img-change-region,
+#img-download-slack{
+  position: relative;
+}
+
+#download-slack{
+  color: #2E71A6;
+  padding-top: 3px;
+}
+
+#change-region{
+  padding-top: 3px;
+}
+
 
 /* Eleanor from here */
 
