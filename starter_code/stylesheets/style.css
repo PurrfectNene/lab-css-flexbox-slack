@@ -19,7 +19,8 @@ html {
   background-color: #540b51;
   /* flex-direction: row;
   justify-content: space-between;
-  align-items: center; */
+  align-items: center; 
+  I previously tried to use flexbox here but I feel like display is easier to lay out the elements*/
 }
 
 #slack-logo {
@@ -77,7 +78,7 @@ h1 {
 }
 
 .button {
-  width: 90%;
+  width: 100%;
   height: 40px;
   border-radius: 4px;
   border: none;
@@ -118,10 +119,8 @@ h1 {
 }
 
 #screenshot {
-    height: auto;
-    width: 100%;
+    width: 150%;
     height: 150%;
-    flex: 1;
     object-fit: cover;
 }
 
@@ -133,21 +132,22 @@ h1 {
     align-items: center;
     text-align: center;
     background-color: #F3EAE2;
-    height: 200px;
-    padding: 0px 40px;
+    /* height: 250px; */
+    padding: 40px 10px;
 }
 
 #logo-header {
   color: #191817;
   text-transform: uppercase;
-  font-size: 12px;
-  margin-bottom: 10px;
+  font-size: 13px;
+  margin-bottom: 15px;
+  font-weight: bolder;
 }
 
 .logo {
   height: 30px;
   width: auto;
-  padding: 5px;
+  padding: 10px;
 }
 
 /*Irene from here*/
@@ -255,5 +255,49 @@ font-size: 40px;
   flex-wrap: wrap;
 }
 
+/* Eleanor from here */
 
+@media (min-width: 768px) and (max-width: 1024px) {
 
+  header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  #image-container {
+    justify-content: flex-end;
+  }
+
+  #screenshot {
+    width: 150%;
+    height: 150%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+
+  .logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .percentages-list ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #footer-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+}
