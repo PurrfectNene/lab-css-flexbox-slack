@@ -212,7 +212,7 @@ font-size: 40px;
 }
 
 .welcome button{
-  width: 40%;
+  width: 100%;
   height:  40px;
   text-transform: uppercase;
 }
