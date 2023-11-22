@@ -304,7 +304,7 @@ font-size: 40px;
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-  header {
+  header { 
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -345,4 +345,41 @@ font-size: 40px;
     justify-content: space-between;
   }
 
-}
+  /*Irene 2nd iteration*/
+  .welcome {
+    padding: 0px 100px;
+  }
+
+  #try-for-free{
+    color: #540b51;
+    margin-bottom: 8px;
+    border-radius: 1%;
+    border: none;
+  }
+
+  #talk-to-sales{
+    background-color: #540b51;
+    color: white;
+    margin-bottom: 30px;
+    border-color: white;
+    border-radius: 1%;
+    border-width: 1px;
+  }
+
+  #footer-list {
+    margin-right: 100px;
+  }
+
+  #download-slack-section{
+    margin-left: 100px;
+  }
+
+  #social-logos {
+    margin-right: 420px;
+  }
+
+} /*Here the end of the 2nd iteration*/
+
+
+
+
