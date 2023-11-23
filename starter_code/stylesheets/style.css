@@ -34,6 +34,7 @@ html {
   text-decoration: none;
   display: none;
   list-style-type: none;
+  background-color: #540B51;
 }
 
 #menu-icon {
@@ -306,26 +307,43 @@ font-size: 40px;
 
   header { 
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
+    padding-bottom: 70px;
+    background-color: #540B51;
+    align-items: center;
+    text-align: left;
+    
+  }
+
+  #main-container {
+    text-align: left;
     justify-content: flex-start;
+    position: relative;
+
+  }
+
+  h1 {
+    font-size: 80px;
+    text-align: left;
+  }
+
+  #sub-header {
+    font-size: 20px;
   }
 
   #image-container {
-    justify-content: flex-end;
+    height: auto;
   }
 
   #screenshot {
-    width: 150%;
-    height: 150%;
-    justify-content: flex-end;
-    align-items: flex-end;
-    overflow: hidden;
+    right: 50px;
+    padding: 30px;
   }
 
   .logo-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
   }
@@ -380,6 +398,73 @@ font-size: 40px;
 
 } /*Here the end of the 2nd iteration*/
 
+/* Eleanor from here - third iteration */
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  
+  #navigation-bar {
+    display: block;
+    text-decoration: none;
+    background-color: #540B51;
+  }
+
+  /* nav ul {
+    display: block;
+  }
+
+  #sign-in {
+    background-color: #540b51;
+    font: white;
+  }
+
+  #try-for-free{
+
+  } */
+
+  #menu-icon {
+    display: none;
+  }
+
+  #navigation-list {
+    display: inline-block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+  }
 
 
 
+  header { 
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 70px;
+    background-color: #540B51;
+    align-items: center;
+    text-align: left;
+    color: white;
+  }
+
+  #main-container {
+    text-align: left;
+    justify-content: flex-start;
+    position: relative;
+  }
+
+  h1 {
+    font-size: 80px;
+    text-align: left;
+  }
+
+  #sub-header {
+    font-size: 20px;
+  }
+
+  #image-container {
+    height: auto;
+  }
+
+  #screenshot {
+    right: 50px;
+    padding: 30px;
+  }
+}
